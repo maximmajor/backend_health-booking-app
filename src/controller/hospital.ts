@@ -26,11 +26,21 @@ export const addHospitals = async (req: any, res: Response, next: NextFunction) 
 export const getListOfHospitals = async (req: any, res: Response, next: NextFunction) => {
     const { hospitalName, address, doctorsName } = req.body
     try {
-      //  const listOfHospials: any = await Hospital.find()
-        // if(!listOfHospials){
-        //     res.status(400).json("There are no hospitals in your location")
-        //     return
-        // }
+       const listOfHospials: any = await Hospital.find()
+        if(!listOfHospials){
+            res.status(400).json("There are no hospitals in your location")
+            return
+        }
+        res.status(200).json(listOfHospials)
+    }
+    catch (err) {
+        res.status(500).json("server error");
+    }
+}
+
+export const getMockListOfHospitals = async (req: any, res: Response, next: NextFunction) => {
+    const { hospitalName, address, doctorsName } = req.body
+    try {
         res.status(200).json([
             {
                 "hospitalName": "St. Nicholas Hospital",

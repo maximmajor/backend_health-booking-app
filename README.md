@@ -14,3 +14,28 @@ Technologies
 1. Mongodb for the database
 2. Nodejs for the backend
 3. Typescript
+
+Documentation:
+once you clone the project,
+1. run yarn (to get all dependenciesand node modules)
+2. run yarn tsc (to get the dist folder)
+3. run yarn start. (to start the server)
+4. you need cloudinary account so that the image upload will work. because cloudinary in used to store our imagaes
+5. you need a mongodb account. check .env.example to see required environment variables
+
+ROUTES:
+1. to add list of hospitals:
+
+    routes: localhost:3000/hospital/add
+
+    body: {
+    "hospitalName": "Adefemi Hospital",
+    "address": "ikeja lagos",
+    "doctorsName": "mr tomisola abigail"
+}
+
+2. to see list of hospital
+    routes: localhost:3000/hospital/list
+
+3. to see mock list of hospial
+   routes: localhost:3000/hospital/list/mock
