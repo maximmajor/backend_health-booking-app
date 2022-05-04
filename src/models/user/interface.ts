@@ -5,10 +5,10 @@ export interface IUser extends mongoose.Document {
     _id: string;
     hospitalId: mongoose.Schema.Types.ObjectId;
     name: string;
-    phoneNumber: string;
+    phoneNumber: number;
     email: string;
     illnessType: string;
     photo: string;
-  }
-  
-  export default IUser
+}
+
+export default IUser

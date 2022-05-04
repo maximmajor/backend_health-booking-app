@@ -39,3 +39,15 @@ ROUTES:
 
 3. to see mock list of hospial
    routes: localhost:3000/hospital/list/mock
+
+3. to book the
+
+     routes: localhost:3000/users/book/appointment/:hospitalId
+
+           body: {
+            "name": "major",
+            "phonenNmber": 070.....,
+            "email": "me@gmail.com",
+            "illnessType": malaria ,
+            "photo": .jpg
+            }

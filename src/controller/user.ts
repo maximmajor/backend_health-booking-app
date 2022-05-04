@@ -7,14 +7,15 @@ import cloudinary from "../utils/cloudinary";
 const secret: string = process.env.ACCESS_TOKEN_SECRET as string;
 
 export const bookAppointment = async (req: any, res: Response, next: NextFunction) => {
-    const { name, phoneNumber, email, illnessType, photo } = req.body
+    const hospitalId = req.params.hospitalId
     try {
         const result = await cloudinary.uploader.upload(req.file.path);
         const newUser = new User({
-            name: name,
-            phonenNmber: phoneNumber,
-            email: email,
-            illnessType: illnessType,
+            hospitalId: hospitalId,
+            name: req.body.name,
+            phonenNmber: req.body.phoneNumber,
+            email: req.body.email,
+            illnessType: req.body.illnessType,
             photo: result.secure_url,
             cloudinary_id: result.public_id,
         })

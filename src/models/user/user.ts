@@ -13,7 +13,7 @@ const userSchema = new mongoose.Schema<IUser>(
       trim: true,
     },
     phoneNumber: {
-      type: String,
+      type: Number,
       trim: true,
     },
     email: {
@@ -42,4 +42,4 @@ userSchema.method("toJSON", function () {
 });
 
 const User = mongoose.model('user', userSchema);
-export default  User;
+export default User;

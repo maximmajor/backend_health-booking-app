@@ -4,6 +4,6 @@ import { bookAppointment } from "../controller/user"
 const upload = require("../utils/multer");
 
 
-router.post('/book/appointment', upload.single("photo"), bookAppointment)
+router.post('/book/appointment/:hospitalId', upload.single("photo"), bookAppointment)
 
 export default router;
