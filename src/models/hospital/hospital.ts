@@ -1,8 +1,9 @@
 import mongoose from 'mongoose';
 import IHopsital from "./interface"
+
 const hospitalSchema = new mongoose.Schema<IHopsital>(
   {
-    hopitalName: {
+    hospitalName: {
       type: String,
       trim: true,
     },
@@ -13,7 +14,6 @@ const hospitalSchema = new mongoose.Schema<IHopsital>(
     doctorsName: {
       type: String,
       required: true,
-      unique: true,
       trim: true,
     },
   },

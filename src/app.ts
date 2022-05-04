@@ -5,6 +5,7 @@ import path from "path";
 import cookieParser from "cookie-parser";
 import logger from "morgan";
 import indexRouter from "./routes/index";
+import hospitalRouter from "./routes/hospital";
 import usersRouter from "./routes/users";
 import connectDB from "./config/db";
 
@@ -30,6 +31,7 @@ app.use(express.static(path.join(__dirname, "..", "public")));
 
 app.use("/", indexRouter);
 app.use("/users", usersRouter);
+app.use("/hospital", hospitalRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
