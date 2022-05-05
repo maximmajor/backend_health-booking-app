@@ -39,7 +39,6 @@ ROUTES:
 
     }
 
-
 2.  to see list of hospital
     Request: GET
     routes: localhost:3000/hospital/list
@@ -49,47 +48,47 @@ ROUTES:
     routes: localhost:3000/hospital/list/mock
 
 response:
-    [
-    {
-        "hospitalName": "St. Nicholas Hospital",
-        "address": "Lagos Island",
-        "doctorsName": "mr Robert John",
-        "createdAt": "2022-05-04T10:02:33.792Z",
-        "updatedAt": "2022-05-04T10:02:33.792Z",
-        "id": "62724f39bf4bcfc90dab5079"
-    },
-    {
-        "hospitalName": "First Consultant Hospital",
-        "address": "Obalende",
-        "doctorsName": "mr william simon",
-        "createdAt": "2022-05-04T10:05:05.599Z",
-        "updatedAt": "2022-05-04T10:05:05.599Z",
-        "id": "62724fd1bf4bcfc90dab507b"
-    },
-    {
-        "hospitalName": "Eko Hospital",
-        "address": "lekki",
-        "doctorsName": "mr femi ademola",
-        "createdAt": "2022-05-04T10:06:44.515Z",
-        "updatedAt": "2022-05-04T10:06:44.515Z",
-        "id": "62725034bf4bcfc90dab507d"
-    },
-    {
-        "hospitalName": "Holy Trinity Hospital",
-        "address": "ikeja lagos",
-        "doctorsName": "mr muazu abu",
-        "createdAt": "2022-05-04T10:08:40.962Z",
-        "updatedAt": "2022-05-04T10:08:40.962Z",
-        "id": "627250a8bf4bcfc90dab5085"
-    },
-    {
-        "hospitalName": "Adefemi Hospital",
-        "address": "ikeja lagos",
-        "doctorsName": "mr tomisola abigail",
-        "createdAt": "2022-05-04T10:09:30.756Z",
-        "updatedAt": "2022-05-04T10:09:30.756Z",
-        "id": "627250dabf4bcfc90dab5087"
-    }
+[
+{
+"hospitalName": "St. Nicholas Hospital",
+"address": "Lagos Island",
+"doctorsName": "mr Robert John",
+"createdAt": "2022-05-04T10:02:33.792Z",
+"updatedAt": "2022-05-04T10:02:33.792Z",
+"id": "62724f39bf4bcfc90dab5079"
+},
+{
+"hospitalName": "First Consultant Hospital",
+"address": "Obalende",
+"doctorsName": "mr william simon",
+"createdAt": "2022-05-04T10:05:05.599Z",
+"updatedAt": "2022-05-04T10:05:05.599Z",
+"id": "62724fd1bf4bcfc90dab507b"
+},
+{
+"hospitalName": "Eko Hospital",
+"address": "lekki",
+"doctorsName": "mr femi ademola",
+"createdAt": "2022-05-04T10:06:44.515Z",
+"updatedAt": "2022-05-04T10:06:44.515Z",
+"id": "62725034bf4bcfc90dab507d"
+},
+{
+"hospitalName": "Holy Trinity Hospital",
+"address": "ikeja lagos",
+"doctorsName": "mr muazu abu",
+"createdAt": "2022-05-04T10:08:40.962Z",
+"updatedAt": "2022-05-04T10:08:40.962Z",
+"id": "627250a8bf4bcfc90dab5085"
+},
+{
+"hospitalName": "Adefemi Hospital",
+"address": "ikeja lagos",
+"doctorsName": "mr tomisola abigail",
+"createdAt": "2022-05-04T10:09:30.756Z",
+"updatedAt": "2022-05-04T10:09:30.756Z",
+"id": "627250dabf4bcfc90dab5087"
+}
 ]
 
 4.  to book for an appointment with a doctor.
@@ -105,7 +104,7 @@ response:
             "illnessType": malaria ,
             "photo": .jpg
             }
-    
-    Response: 
+
+    Response:
     if went through "success"
     if not "failure"
