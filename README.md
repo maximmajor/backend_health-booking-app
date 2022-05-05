@@ -46,10 +46,10 @@ ROUTES:
 3.  to see mock list of hospial
     Request: GET
     routes: localhost:3000/hospital/list/mock
+     
+    response =>
 
-response: [
-   
-   body: {
+    body: [ {
         "hospitalName": "St. Nicholas Hospital",
         "address": "Lagos Island",
         "doctorsName": "mr Robert John",
@@ -88,7 +88,8 @@ response: [
         "createdAt": "2022-05-04T10:09:30.756Z",
         "updatedAt": "2022-05-04T10:09:30.756Z",
         "id": "627250dabf4bcfc90dab5087"
-    }
+         }
+         
         ]
 
 
