@@ -5,7 +5,7 @@ const userSchema = new mongoose.Schema<IUser>(
   {
     hospitalId: {
       type: mongoose.Schema.Types.ObjectId,
-      ref: "hopital",
+      ref: "hospital",
       required: true,
     },
     name: {
@@ -24,11 +24,9 @@ const userSchema = new mongoose.Schema<IUser>(
     },
     illnessType: {
       type: String,
-      trim: true,
     },
     photo: {
       type: String,
-      trim: true,
     },
   },
   {
