@@ -4,19 +4,22 @@ an appointment with a doctor.
 
 No login process included in this task
 Simple user story
+
 1. As a user I want to book a doctor from a selected hospital.
 2. I want to see a success or failure message after booking.
 3. I don’t want to login but I want to include my name, phone, email,
-illness type and upload my photo during the booking.
-Requirement
+   illness type and upload my photo during the booking.
+   Requirement
 
 Technologies
+
 1. Mongodb for the database
 2. Nodejs for the backend
 3. Typescript
 
 Documentation:
 once you clone the project,
+
 1. run yarn (to get all dependenciesand node modules)
 2. run yarn tsc (to get the dist folder)
 3. run yarn start. (to start the server)
@@ -24,25 +27,29 @@ once you clone the project,
 5. you need a mongodb account. check .env.example to see required environment variables
 
 ROUTES:
-1. to add list of hospitals:
 
+1.  to add list of hospitals:
+    Request: POST
     routes: localhost:3000/hospital/add
 
-    body: {
-    "hospitalName": "Adefemi Hospital",
-    "address": "ikeja lagos",
-    "doctorsName": "mr tomisola abigail"
-}
+          body: {
+            "hospitalName": "Adefemi Hospital",
+            "address": "ikeja lagos",
+            "doctorsName": "mr tomisola abigail"
 
-2. to see list of hospital
+    }
+
+2.  to see list of hospital
+    Request: GET
     routes: localhost:3000/hospital/list
 
-3. to see mock list of hospial
-   routes: localhost:3000/hospital/list/mock
+3.  to see mock list of hospial
+    Request: GET
+    routes: localhost:3000/hospital/list/mock
 
-3. to book the
-
-     routes: localhost:3000/users/book/appointment/:hospitalId
+4.  to book for an appointment with a doctor.
+    Request: POST
+    routes: localhost:3000/users/book/appointment/:hospitalId
 
            body: {
             "name": "major",
