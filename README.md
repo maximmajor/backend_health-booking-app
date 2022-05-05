@@ -48,7 +48,8 @@ ROUTES:
     routes: localhost:3000/hospital/list/mock
 
 response: [
-   {
+   
+   body: {
         "hospitalName": "St. Nicholas Hospital",
         "address": "Lagos Island",
         "doctorsName": "mr Robert John",
@@ -89,7 +90,7 @@ response: [
         "id": "627250dabf4bcfc90dab5087"
     }
         ]
-        
+
 
 4.  to book for an appointment with a doctor.
     Request: POST
